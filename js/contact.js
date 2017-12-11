@@ -8,6 +8,7 @@ function save_contact() {
         email: document.getElementById("email").value
     }
 
+    localStorage.clear();
     localStorage.setItem(adh.email, JSON.stringify(adh));
 
     add_content("Confirmation !", "<div id='infos'>Merci " + adh.prenom + " ! </div>");
