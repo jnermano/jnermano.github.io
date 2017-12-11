@@ -8,6 +8,9 @@ function save_contact() {
         email: document.getElementById("email").value
     }
 
+
+
+    sessionStorage.clear();
     localStorage.clear();
     localStorage.setItem(adh.email, JSON.stringify(adh));
 
