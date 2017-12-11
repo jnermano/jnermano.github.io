@@ -50,8 +50,15 @@ body {
   visibility: hidden;
 }
 
+#home canvas#home_canvas {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+}
 
-#home,
+
+
+
 #presention {
     height: 600px;
 }
@@ -142,7 +149,7 @@ div.col_footer ul {
 }
 
 div.col_footer li {
-   -
+    list-style-type: none;
 }
 
 div.col_footer {
@@ -209,6 +216,10 @@ cite{
     display: block;
 }
 
+article cite{
+    height: 150px;
+}
+
 .pagination {
     display: inline-block;
     
@@ -255,5 +266,10 @@ cite{
     #team,
     cite{
         height: inherit;
+    }
+
+    article cite{
+        height: 250px;
+        display: inherit;
     }
 }

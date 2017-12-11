@@ -8,8 +8,8 @@
     <title>ARCSO - Contact</title>
 
     <link href="css/main.css" rel="stylesheet" type="text/css" />
-    <link href="css/contact.css" rel="stylesheet" type="text/css" />
     <link href="css/info_window.css" rel="stylesheet" type="text/css" />
+    <link href="css/contact.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -39,6 +39,9 @@
                 <li>
                     <a class="active" href="#">Contact</a>
                 </li>
+                <li  style="float:right;" id="li_profile">
+                    <a class="active" href="#" onclick="show_user()" id="a_profile"></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -48,8 +51,9 @@
         <section id="sec_contact">
 
             <div id="map" class="contact_item">map</div>
-            <form>
+            
                 <div id="form_contact" class="contact_item">
+                    <form>
                     <label for="nom">Nom</label>
                     <input type="text" id="nom" placeholder="Nom" required="required" />
                 
@@ -74,9 +78,9 @@
                     <input type="email" id="email" placeholder="exemple@gmail.com" required="required" />
 
                     <button type="button" class="btn_submit" onclick="save_contact()">Soumettre</button>
-                
+                </form>
                 </div>
-            </form>
+            
         </section>
     </main>
     
@@ -178,6 +182,7 @@
     
     </div>
     
+    <script type="text/javascript" src="js/load_data.js"></script>
     <script type="text/javascript" src="js/info_window.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrQ7owxuzyPtJo8AfCc0gFBsr3FgEVyCg"></script>
     <script type="text/javascript" src="js/contact.js"></script>

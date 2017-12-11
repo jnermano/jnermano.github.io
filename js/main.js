@@ -53,3 +53,76 @@ function scroll_spy(){
 
 document.addEventListener("scroll", scroll_spy);
 scroll_spy();
+
+function wait(ms) {
+    var start = new Date().getTime();
+    var end = start;
+    while (end < start + ms) {
+        end = new Date().getTime();
+    }
+}
+
+var pattern = new Image();
+
+function animate() {
+    pattern.src = 'http://webbkyrkan.com/img/2027/d6e0440430b044da970b8cd95e5e9371--tiny-houses-floor-plans-small-houses.jpg';
+    setInterval(drawShape, 1000);
+}
+
+var canvas = document.getElementById('home_canvas');
+var ctx = canvas.getContext('2d');
+
+ctx.translate(10, 10);
+var left = -1;
+
+function drawShape() {
+    
+
+    if (canvas.getContext) {
+
+        left = left * -1;
+
+        for(let i = 0; i < 5; i++){
+            
+            //ctx.save();
+            ctx.clearRect(0, 0, 2000, 700);
+            var px = 0;
+
+            if (left < 0) {
+                px = 100 + (10 * i);
+                console.log('right : ' + (100 + (10 * i)));
+            }else{
+                px = 100 - (10 * i);
+                console.log('right : ' + (100 - (10 * i)));
+            }
+
+            
+
+            ctx.drawImage(pattern, px, 00, 600, 400);
+            //ctx.restore();
+
+            wait(100);
+        }
+
+        
+        
+    }
+
+    else {
+        alert('You need Safari or Firefox 1.5+ to see this demo.');
+    }
+}
+
+animate();
+
+/*
+var canvas = document.getElementById('home_canvas');
+var context = canvas.getContext('2d');
+var imageObj = new Image();
+
+imageObj.onload = function () {
+    context.rotate(Math.PI / 4);
+    context.drawImage(imageObj, 0, 0, 736, 677, 0, 0, 500, 300);
+};
+imageObj.src = 'http://webbkyrkan.com/img/2027/d6e0440430b044da970b8cd95e5e9371--tiny-houses-floor-plans-small-houses.jpg';
+*/

@@ -36,13 +36,26 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                <li style="float:right;" id="li_profile">
+                    <a class="active" href="#" onclick="show_user()" id="a_profile"></a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <span class="anchor" id="home_"></span>
-        <section id="home"></section> <!-- home end here -->
+        <span class="anchor" id="home_" style="height:90px;"></span>
+        <section id="home">
+            <canvas id="home_canvas" height="400" width="800"></canvas>
+            <br>
+            <article>
+                <cite>
+                     L'architecture actuelle s'occupe de la maison, de la maison ordinaire et courante pour hommes normaux et courants. Elle
+                    laisse tomber les palais. Voilà un signe des temps.
+                    <br>-<b>Le Corbusier</b> <br>  <small>Architecte, Artiste, Décorateur, Peintre (1887 - 1965)</small>
+                </cite>
+            </article>
+        </section> <!-- home end here -->
 
         <span class="anchor" id="services_"></span>
         <section id="services">
@@ -212,6 +225,7 @@
     
     </div>
     
+    <script type="text/javascript" src="js/load_data.js"></script>
     <script type="text/javascript" src="js/info_window.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

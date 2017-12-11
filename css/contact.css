@@ -41,7 +41,7 @@ div.contact_item{
 
 #form_contact{
     background: white;
-    width: 30%;
+    width: 29.6%;
     padding: 10px;
     overflow: hidden;
 }
@@ -52,6 +52,14 @@ div.contact_item{
 
 #map_address li {
      list-style-type: none;
+}
+
+.modal-content{
+    width : 50%;
+}
+
+#sec_contact{
+    overflow: hidden;
 }
 
 
