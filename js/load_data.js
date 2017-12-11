@@ -1,13 +1,19 @@
-var li_profile = document.getElementById("li_profile");
-var a_profile = document.getElementById("a_profile");
 
-if (localStorage.length > 0) {
-    var key = localStorage.key(0);
-    var adh = JSON.parse(localStorage.getItem(key));
-    a_profile.innerText = "Salut, " + adh.prenom;
-}else{
-    a_profile.innerText = "Salut, visiteur";
+
+function check_user() {
+    var li_profile = document.getElementById("li_profile");
+    var a_profile = document.getElementById("a_profile");
+
+    if (localStorage.length > 0) {
+        var key = localStorage.key(0);
+        var adh = JSON.parse(localStorage.getItem(key));
+        a_profile.innerText = "Salut, " + adh.prenom;
+    } else {
+        a_profile.innerText = "Salut, visiteur";
+    }
 }
+
+check_user();
 
 function show_user(){
     if (localStorage.length > 0) {

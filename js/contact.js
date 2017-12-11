@@ -18,6 +18,10 @@ function save_contact() {
     document.getElementById("tel").value = "";
     document.getElementById("email").value = "";
     document.getElementById("activite").value = "";
+
+    check_user();
+    
+    return false;
 }
 
 

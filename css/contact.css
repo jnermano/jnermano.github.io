@@ -1,4 +1,4 @@
-#form_contact input{
+#form_contact input:not(.btn_submit){
     border: 1px solid white;
     background-color: #eee;
     padding: 12px 20px;
@@ -7,12 +7,12 @@
     width: 89%;
 }
 
-#form_contact input:focus {
+#form_contact input:focus:not(.btn_submit) {
     outline: none;
     box-shadow: 0 0 10px rgb(153, 60, 60);
 }
 
-#form_contact button {
+#form_contact input.btn_submit {
     
     padding: 12px 20px;
     margin: 8px 0;
