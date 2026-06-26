@@ -42,4 +42,4 @@ Pour ajouter un projet:
 
 ## Confidentialité
 
-Le site ne contient aucun formulaire, outil de suivi, pixel publicitaire ou script d'analytique. Le contact utilise un lien `mailto:`.
+Le site ne contient aucun formulaire, outil de suivi, pixel publicitaire ou script d'analytique. Les boutons de contact ouvrent un courriel prérempli dans Gmail Web, avec un lien `mailto:` comme secours HTML.
